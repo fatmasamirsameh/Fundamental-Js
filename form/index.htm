@@ -1,0 +1,53 @@
+   <html>
+    <head>
+        <meta charset="utf-8">
+        <title>javascript </title>
+     <link rel="stylesheet" href="css/style.css" />
+        </head>
+        <body>
+                    
+              
+       <div class="wrapper">
+           <h2>contact us</h2>
+           <div id="error_message"></div>
+           <form id="myform"  action="page.php" onsubmit="return validation()" >
+               <div class="input_field">
+                   <input type="text" placeholder="Username" id ="name">
+               </div>
+               <div class="input_field">
+                   <input type="password" placeholder="Password" id ="password">
+               </div>
+               <div class="input_field">
+                   <input type="password" placeholder="password_confirm" id ="password_confirm">
+               </div>
+               
+                  <div class="input_field">
+               <input type="radio" name="gender" id="male"  value="male">
+                      <label for="male">Male</label>
+                      <input type="radio" name="gender" id="female"  value="female">
+                      <label for="female">Female</label><br>
+               </div>
+               
+                <div class="input_field">
+               <select id="city" required>
+             <option value=""  >None</option>
+             <option value="volvo"> Alexandria</option>
+             <option value="saab">Cairo</option>
+             <option value="mercedes">Giza</option>
+             
+               </select>
+               </div>
+                <div class="input_field">
+                   <input type="text" placeholder="Phone" id ="phone">
+               </div>
+               <div class="input_field">
+                   <textarea id="message" placeholder="Message"></textarea>
+               </div>
+               <div class="btn">
+               <input type="submit" value="Submit">
+                      </div>
+           </form>
+       </div>
+               <script src="script.js"></script>
+            </body>
+            </html>
